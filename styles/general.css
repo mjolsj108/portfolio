@@ -1,0 +1,20 @@
+p, div{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+body{
+  height: 3000px;
+  padding-top: 100px;
+}
+
+.overlay{
+  background-color: rgb(21, 93, 93);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -100;
+}
+

@@ -1,0 +1,80 @@
+.top-menu{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100px;
+  background-color: rgb(46, 117, 117);
+  z-index: 100;
+}
+
+/***************top-menu-left********************/
+
+.top-menu-left{
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+  cursor: pointer;
+}
+
+.profile-picture{
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  object-position: 0cm -1.3mm;
+  border-radius: 50%;
+}
+
+/***************top-menu-middle********************/
+
+.top-menu-middle{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+}
+
+.top-menu-reference{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+  cursor: pointer;
+}
+
+.top-menu-right-icon,
+.top-menu-middle-icon{
+  height: 40px;
+}
+
+.top-menu-right-text:hover,
+.top-menu-middle-text:hover{
+  transition: 0.3s;
+  opacity: 0.3;
+}
+
+/***************top-menu-right********************/
+
+.top-menu-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.top-menu-right-contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+  cursor: pointer;
+}
