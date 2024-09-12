@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/top-menu.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/education.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/experience.css">
+    <link rel="stylesheet" href="styles/contact-me.css">
   </head>
 
   <body>
-    <!--<div class="overlay"></div> -->
-
     <div class="top-menu">
       <div class="top-menu-left">
         <img class="profile-picture" src="Fotos/profile-picture.jpg">
@@ -20,48 +22,98 @@
       <div class="top-menu-middle">
         <div class="top-menu-reference">
           <img class="top-menu-middle-icon" src="icons/home-icon.png">
-          <div class="top-menu-middle-text">Home</div>
+          <a id="link" href="#home">
+            <div class="top-menu-middle-text">Home</div>
+          </a>
         </div>
 
-        <div class="top-menu-reference">
-          <img class="top-menu-middle-icon" src="icons/cv-icon.png">
-          <div class="top-menu-middle-text">Portfolio</div>
-        </div>
+        
 
         <div class="top-menu-reference">
           <img class="top-menu-middle-icon" src="icons/education-icon.png">
-          <div class="top-menu-middle-text">Education</div>
+          <a id="link" href="#education">
+            <div class="top-menu-middle-text">Education</div>
+          </a>
         </div>
 
         <div class="top-menu-reference">
           <img class="top-menu-middle-icon" src="icons/projects-icon.png">
-          <div class="top-menu-middle-text">Projects</div>
+          <a id="link" href="#projects">
+            <div class="top-menu-middle-text">Projects</div>
+          </a>
         </div>
 
         <div class="top-menu-reference">
           <img class="top-menu-middle-icon" src="icons/experience-icon.png">
-          <div class="top-menu-middle-text">Experience</div>
+          <a id="link" href="#experience">
+            <div class="top-menu-middle-text">Experience</div>
+          </a>
         </div>
+
+        <div class="top-menu-reference">
+          <img class="top-menu-middle-icon" src="icons/contact-icon.png">
+          <a id="link" href="#contact-me">
+            <div class="top-menu-middle-text">Contact Me</div>
+          </a>
+        </div>
+
+        
       </div>
 
       <div class="top-menu-right">
-        <div class="top-menu-right-contact">
-          <img class="top-menu-right-icon" src="icons/contact-icon.png">
-          <div class="top-menu-right-text">Contact Me</div>
+        <div class="top-menu-right-cv">
+          <img class="top-menu-right-icon" src="icons/cv-icon.png">
+          <a class="top-menu-cv-link" href="pdfs/CV_Yousef.pdf" target="_blank">
+            CV
+          </a>
         </div>
       </div>
     </div>
 
-    <div class="home">
-      <div class="home-decription">
-        <div class="home-decription-hi">Hi</div>
-        <div class="home-decription-me">I'm <span class="home-decription-name">Yousef Mjawaz</span></div>
-        <div class="home-decription-me">a computer science student from Hamburg</div>
-        <div class="home-some-more-text">Ich studiere Informatik Technischer Systeme an der Hochschule für 
-          angewandte Wissenschaften in Hamburg. Da soll was anderes hin, hatte aber erstmal 
-        kein Plan was ich schreiben sollte</div>
+    <div class="container">
+      <div class="home" id="home">
+        <div class="home-description">
+          <div class="home-description-hi">Hi</div>
+          <div class="home-description-me">I'm <span class="home-description-name">Yousef Mjawaz</span></div>
+          <div class="home-description-me">a computer science student from Hamburg</div>
+          <div class="home-some-more-text">Pursuing a Bachelor of Science in Computer Science for Technical
+            Systems at the University of Applied Sciences in Hamburg (HAW-Hamburg),
+          </div>
+          <div class="home-some-more-text-2">
+            I am passionate about technology, innovation, and solving complex problems through code.
+          </div>
+        </div>
+        <img class="my-picture" src="Fotos/profile-picture.jpg">
       </div>
-      <img class="my-picture" src="Fotos/profile-picture.jpg">
+  
+      <div class="education" id="education">
+        <div>Education</div>
+      </div>
+
+      <div class="projects" id="projects">
+        <div>Projects</div>
+      </div>
+
+      <div class="experience" id="experience">
+        <div>Experience</div>
+      </div>
+
+      <div class="contact-me" id="contact-me">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+          <div class="contact-left-title">
+            <h2>Contact Me</h2>
+            <hr>
+          </div>
+          <input type="hidden" name="access_key" value="06ee4c49-d36f-4ade-a0a6-6aeb5da081b2">
+          <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+          <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+          <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+          <button type="submit">Submit <img src="icons/submit-icon.png"></button>
+        </form>
+      </div>
+
     </div>
+    
+
   </body>
 </html>

@@ -1,6 +1,8 @@
-p, div{
+*{
   font-family: "Poppins", sans-serif;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
@@ -8,13 +10,38 @@ body{
   padding-top: 100px;
 }
 
-.overlay{
-  background-color: rgb(21, 93, 93);
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
+a:visited,
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container{
+  position: absolute;
   right: 0;
-  z-index: -100;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.contact-me,
+.experience,
+.projects,
+.education,
+.home{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  right: 0;
+  left: 0;
+  height: 100%;
+  top: 0;
+  gap: 50px;
+  
 }
 
